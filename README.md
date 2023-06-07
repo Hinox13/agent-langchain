@@ -5,7 +5,7 @@ The docker files are mounted so is easy to modify and test the code while runnin
 
 
 ## Set up
-- First paste the openai and wolfram API keys in the src/keys.env file.
+- First paste the [openai](https://openai.com/) and [wolfram](https://products.wolframalpha.com/api) API keys in the src/keys.env file.
 
 - The rest is prepared so you just need to build the container and run it. So go to the terminal and do:
 ```
