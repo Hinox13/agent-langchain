@@ -1,0 +1,18 @@
+version: '3.0'
+
+networks:
+  langchain:
+    name: langchain
+
+services:
+  treecreator:
+    build: ./env/
+    container_name: langent
+    volumes:
+      - $PWD:/code
+    networks: 
+    - langchain
+    command: bash -c "chainlit run src/app.py -w"
+    ports:
+      - 8000:8000
+    

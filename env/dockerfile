@@ -1,0 +1,8 @@
+FROM python:3.10-slim
+
+RUN pip install langchain chainlit python-dotenv wikipedia duckduckgo-search wolframalpha
+ENV PYTHONDONTWRITEBYTECODE=1
+
+WORKDIR /code
+
+EXPOSE 8000
